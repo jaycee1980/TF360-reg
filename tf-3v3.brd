@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -161,18 +161,20 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0" layer="20"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="24.13" width="0" layer="20"/>
-<wire x1="10.16" y1="24.13" x2="0" y2="24.13" width="0" layer="20"/>
-<wire x1="0" y1="24.13" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="0" y1="24.13" x2="10.16" y2="24.13" x3="5.08" y3="25.4" textsize="1.016" textratio="10" layer="47"/>
-<dimension x1="10.16" y1="0" x2="10.16" y2="24.13" x3="12.7" y3="12.065" textsize="1.016" textratio="10" layer="47"/>
-<text x="1.143" y="4.064" size="1.016" layer="21" ratio="10">3V3</text>
-<text x="6.858" y="4.064" size="1.016" layer="21" ratio="10">5V</text>
-<text x="8.255" y="3.81" size="1.27" layer="22" ratio="10" rot="MR90">TF360 3.3V REG</text>
-<text x="6.35" y="3.81" size="1.27" layer="22" ratio="10" rot="MR90">BY P MULHOLLAND</text>
-<text x="0.635" y="3.81" size="1.27" layer="22" ratio="10" rot="MR90">&gt;LAST_DATE_TIME</text>
-<text x="2.54" y="3.81" size="1.27" layer="22" ratio="10" rot="MR90">REV 1</text>
+<wire x1="0" y1="0" x2="13.97" y2="0" width="0" layer="20"/>
+<wire x1="13.97" y1="0" x2="13.97" y2="15.24" width="0" layer="20"/>
+<wire x1="13.97" y1="15.24" x2="0" y2="15.24" width="0" layer="20"/>
+<wire x1="0" y1="15.24" x2="0" y2="0" width="0" layer="20"/>
+<dimension x1="0" y1="15.24" x2="13.97" y2="15.24" x3="6.985" y3="16.51" textsize="1.016" textratio="10" layer="47"/>
+<dimension x1="13.97" y1="0" x2="13.97" y2="15.24" x3="16.51" y3="7.62" textsize="1.016" textratio="10" layer="47"/>
+<text x="4.953" y="4.064" size="1.016" layer="21" ratio="10">3V3</text>
+<text x="10.668" y="4.064" size="1.016" layer="21" ratio="10">5V</text>
+<text x="3.175" y="1.27" size="1.27" layer="22" ratio="10" rot="MR90">TF360 3.3V REG</text>
+<text x="11.43" y="5.08" size="1.27" layer="22" ratio="10" rot="MR90">BY PETE M</text>
+<text x="1.27" y="1.27" size="1.27" layer="22" ratio="10" rot="MR90">REV 2</text>
+<wire x1="11.938" y1="13.335" x2="11.938" y2="10.922" width="0" layer="41"/>
+<wire x1="11.938" y1="13.335" x2="10.795" y2="13.335" width="0" layer="41"/>
+<wire x1="10.795" y1="13.335" x2="10.795" y2="11.684" width="0" layer="41"/>
 </plain>
 <libraries>
 <library name="jc-passive">
@@ -501,44 +503,41 @@ einem neuen Namen ab.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="jc-passive" package="0805" value="22u" x="6.858" y="6.35" smashed="yes" rot="R180">
-<attribute name="LCSC_PART" value="C45783" x="6.858" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="8.509" y="7.493" size="0.8128" layer="25" ratio="10" align="bottom-right"/>
-<attribute name="VALUE" x="8.636" y="7.493" size="0.8128" layer="27" ratio="10" rot="R180" align="top-left"/>
+<element name="C1" library="jc-passive" package="0805" value="22u" x="8.255" y="6.35" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C45783" x="8.255" y="6.35" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="9.906" y="5.207" size="0.8128" layer="25" ratio="10" align="top-right"/>
+<attribute name="VALUE" x="10.033" y="7.493" size="0.8128" layer="27" ratio="10" rot="R180" align="top-left"/>
 </element>
-<element name="C2" library="jc-passive" package="0805" value="22u" x="3.302" y="6.35" smashed="yes">
-<attribute name="LCSC_PART" value="C45783" x="3.302" y="6.35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="1.651" y="7.493" size="0.8128" layer="25" ratio="10"/>
-<attribute name="VALUE" x="1.524" y="5.207" size="0.8128" layer="27" ratio="10" align="top-left"/>
+<element name="C2" library="jc-passive" package="0805" value="22u" x="3.683" y="6.35" smashed="yes">
+<attribute name="LCSC_PART" value="C45783" x="3.683" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.032" y="5.207" size="0.8128" layer="25" ratio="10" align="top-left"/>
+<attribute name="VALUE" x="1.905" y="5.207" size="0.8128" layer="27" ratio="10" align="top-left"/>
 </element>
-<element name="CN1" library="jc-connectors" package="0.1&quot;_3X1-ROUND" value="0.1&quot;_3X1R" x="5.08" y="2.54" smashed="yes">
-<attribute name="VALUE" x="1.27" y="1.016" size="1.27" layer="27" ratio="10" align="top-left"/>
+<element name="CN1" library="jc-connectors" package="0.1&quot;_3X1-ROUND" value="0.1&quot;_3X1R" x="8.89" y="2.54" smashed="yes">
+<attribute name="VALUE" x="5.08" y="1.016" size="1.27" layer="27" ratio="10" align="top-left"/>
 </element>
-<element name="L1" library="jc-inductors" package="ANR6028" value="2u2" x="4.445" y="19.05" smashed="yes" rot="R180">
-<attribute name="LCSC_PART" value="C7427146" x="4.445" y="19.05" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="8.128" y="19.05" size="0.8128" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="8.255" y="22.733" size="1.016" layer="27" ratio="10" rot="R180" align="top-left"/>
+<element name="L1" library="jc-inductors" package="ANR6028" value="2u2" x="4.445" y="11.43" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C7427146" x="4.445" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="8.128" y="9.017" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="8.255" y="15.113" size="1.016" layer="27" ratio="10" rot="R180" align="top-left"/>
 </element>
-<element name="R1A" library="jc-passive" package="0603" value="330K" x="3.175" y="10.16" smashed="yes" rot="R180">
-<attribute name="LCSC_PART" value="C23137" x="3.175" y="10.16" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="4.572" y="9.271" size="0.8128" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="4.699" y="11.049" size="0.8128" layer="27" ratio="10" rot="R180" align="top-left"/>
+<element name="R1A" library="jc-passive" package="0603" value="330K" x="12.065" y="6.35" smashed="yes">
+<attribute name="LCSC_PART" value="C23137" x="12.065" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.541" y="5.461" size="0.8128" layer="27" ratio="10" align="top-left"/>
 </element>
-<element name="R1B" library="jc-passive" package="0603" value="120K" x="8.89" y="10.795" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="C25808" x="8.89" y="10.795" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="9.779" y="9.271" size="0.8128" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="8.001" y="12.319" size="0.8128" layer="27" ratio="10" rot="R270" align="top-left"/>
+<element name="R1B" library="jc-passive" package="0603" value="120K" x="12.065" y="8.255" smashed="yes" rot="R180">
+<attribute name="LCSC_PART" value="C25808" x="12.065" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="13.589" y="9.144" size="0.8128" layer="27" ratio="10" rot="R180" align="top-left"/>
 </element>
-<element name="R2" library="jc-passive" package="0603" value="100K" x="8.89" y="13.716" smashed="yes" rot="R270">
-<attribute name="LCSC_PART" value="C25803" x="8.89" y="13.716" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="8.128" y="15.24" size="0.8128" layer="25" ratio="10"/>
-<attribute name="VALUE" x="8.001" y="15.24" size="0.8128" layer="27" ratio="10" rot="R270" align="top-left"/>
+<element name="R2" library="jc-passive" package="0603" value="100K" x="12.7" y="10.795" smashed="yes" rot="R270">
+<attribute name="LCSC_PART" value="C25803" x="12.7" y="10.795" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.811" y="12.319" size="0.8128" layer="27" ratio="10" rot="R270" align="top-left"/>
 </element>
-<element name="U1" library="jc-vreg" package="SOT23-5" value="TLV62569DBV" x="6.35" y="12.7" smashed="yes" rot="R180">
-<attribute name="JLC_ROTATION" value="-90" x="6.35" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LCSC_PART" value="C141836" x="6.35" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="4.699" y="11.938" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="4.699" y="13.589" size="1.016" layer="27" ratio="10" rot="R270" align="top-left"/>
+<element name="U1" library="jc-vreg" package="SOT23-5" value="TLV62569DBV" x="10.16" y="11.43" smashed="yes" rot="R180">
+<attribute name="JLC_ROTATION" value="-90" x="10.16" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="LCSC_PART" value="C141836" x="10.16" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="8.509" y="13.716" size="0.8128" layer="25" ratio="10"/>
+<attribute name="VALUE" x="8.509" y="12.319" size="1.016" layer="27" ratio="10" rot="R270" align="top-left"/>
 </element>
 </elements>
 <signals>
@@ -548,11 +547,19 @@ einem neuen Namen ab.</description>
 <contactref element="C2" pad="1"/>
 <contactref element="L1" pad="P$2"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="3.175" y="1.27"/>
-<vertex x="3.175" y="21.844"/>
-<vertex x="1.27" y="21.844"/>
-<vertex x="1.27" y="1.27"/>
+<vertex x="7.112" y="1.778"/>
+<vertex x="7.112" y="3.81"/>
+<vertex x="3.683" y="3.81"/>
+<vertex x="3.175" y="4.318"/>
+<vertex x="3.175" y="14.224"/>
+<vertex x="1.27" y="14.224"/>
+<vertex x="1.27" y="1.778"/>
 </polygon>
+<wire x1="6.35" y1="2.54" x2="8.001" y2="0.889" width="0.254" layer="1"/>
+<wire x1="12.573" y1="0.889" x2="13.081" y2="1.397" width="0.254" layer="1"/>
+<wire x1="13.081" y1="1.397" x2="13.081" y2="6.034" width="0.254" layer="1"/>
+<wire x1="8.001" y1="0.889" x2="12.573" y2="0.889" width="0.254" layer="1"/>
+<wire x1="12.765" y1="6.35" x2="13.081" y2="6.034" width="0.254" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="CN1" pad="3"/>
@@ -560,19 +567,19 @@ einem neuen Namen ab.</description>
 <contactref element="U1" pad="1"/>
 <contactref element="C1" pad="1"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="5.08" y="11.938"/>
-<vertex x="6.35" y="11.938"/>
-<vertex x="6.35" y="9.779"/>
-<vertex x="6.731" y="9.398"/>
-<vertex x="8.89" y="9.398"/>
-<vertex x="8.89" y="1.27"/>
-<vertex x="6.985" y="1.27"/>
-<vertex x="6.985" y="7.366"/>
-<vertex x="6.604" y="7.747"/>
-<vertex x="5.08" y="7.747"/>
+<vertex x="8.763" y="10.668"/>
+<vertex x="10.16" y="10.668"/>
+<vertex x="10.16" y="5.842"/>
+<vertex x="10.541" y="5.461"/>
+<vertex x="12.192" y="5.461"/>
+<vertex x="12.192" y="1.778"/>
+<vertex x="10.668" y="1.778"/>
+<vertex x="10.668" y="3.429"/>
+<vertex x="10.287" y="3.81"/>
+<vertex x="8.763" y="3.81"/>
 </polygon>
-<wire x1="7.3" y1="14" x2="7.3" y2="12.888" width="0.254" layer="1"/>
-<wire x1="7.3" y1="12.888" x2="6.35" y2="11.938" width="0.254" layer="1"/>
+<wire x1="11.11" y1="12.73" x2="11.11" y2="11.618" width="0.254" layer="1"/>
+<wire x1="11.11" y1="11.618" x2="10.16" y2="10.668" width="0.254" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="CN1" pad="2"/>
@@ -582,58 +589,63 @@ einem neuen Namen ab.</description>
 <contactref element="C1" pad="2"/>
 <polygon width="0.6096" layer="16">
 <vertex x="0" y="0"/>
-<vertex x="10.16" y="0"/>
-<vertex x="10.16" y="24.13"/>
-<vertex x="0" y="24.13"/>
+<vertex x="13.97" y="0"/>
+<vertex x="13.97" y="15.24"/>
+<vertex x="0" y="15.24"/>
 </polygon>
+<via x="9.906" y="11.43" extent="1-16" drill="0.4"/>
+<via x="8.89" y="11.43" extent="1-16" drill="0.4"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="3.937" y="6.985"/>
-<vertex x="6.223" y="6.985"/>
-<vertex x="6.223" y="1.27"/>
-<vertex x="3.937" y="1.27"/>
+<vertex x="4.064" y="7.874"/>
+<vertex x="4.064" y="4.826"/>
+<vertex x="7.874" y="4.826"/>
+<vertex x="7.874" y="7.874"/>
 </polygon>
-<via x="6.35" y="13.081" extent="1-16" drill="0.4"/>
-<via x="4.445" y="5.08" extent="1-16" drill="0.4"/>
-<via x="5.715" y="5.08" extent="1-16" drill="0.4"/>
-<wire x1="6.35" y1="14" x2="6.35" y2="13.081" width="0.6096" layer="1"/>
-<wire x1="6.35" y1="14" x2="6.35" y2="14.859" width="0.3048" layer="1"/>
-<wire x1="6.35" y1="14.859" x2="6.604" y2="15.113" width="0.3048" layer="1"/>
-<wire x1="8.193" y1="15.113" x2="8.89" y2="14.416" width="0.3048" layer="1"/>
-<wire x1="6.604" y1="15.113" x2="8.193" y2="15.113" width="0.3048" layer="1"/>
-<via x="5.08" y="12.7" extent="1-16" drill="0.4"/>
-<wire x1="5.08" y1="12.7" x2="5.969" y2="12.7" width="0.6096" layer="1"/>
-<wire x1="5.969" y1="12.7" x2="6.35" y2="13.081" width="0.6096" layer="1"/>
+<via x="10.16" y="13.97" extent="1-16" drill="0.4"/>
+<via x="4.318" y="7.62" extent="1-16" drill="0.4"/>
+<via x="7.62" y="7.62" extent="1-16" drill="0.4"/>
+<via x="12.7" y="13.97" extent="1-16" drill="0.4"/>
+<via x="4.318" y="5.08" extent="1-16" drill="0.4"/>
+<via x="11.43" y="13.97" extent="1-16" drill="0.4"/>
+<via x="7.62" y="5.08" extent="1-16" drill="0.4"/>
+<via x="5.969" y="5.08" extent="1-16" drill="0.4"/>
+<via x="5.969" y="6.35" extent="1-16" drill="0.4"/>
+<via x="5.969" y="7.62" extent="1-16" drill="0.4"/>
+<polygon width="0.254" layer="1" isolate="0.254" thermals="no" rank="6">
+<vertex x="13.081" y="11.176"/>
+<vertex x="8.636" y="11.176"/>
+<vertex x="8.636" y="14.224"/>
+<vertex x="13.081" y="14.224"/>
+</polygon>
+<via x="12.7" y="12.7" extent="1-16" drill="0.4"/>
 </signal>
 <signal name="SW">
 <contactref element="U1" pad="3"/>
 <contactref element="L1" pad="P$1"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="5.08" y="13.462"/>
-<vertex x="5.715" y="13.462"/>
-<vertex x="5.715" y="15.367"/>
-<vertex x="6.223" y="15.875"/>
-<vertex x="7.62" y="15.875"/>
-<vertex x="7.62" y="21.971"/>
-<vertex x="5.08" y="21.971"/>
+<vertex x="7.874" y="11.684"/>
+<vertex x="8.382" y="12.192"/>
+<vertex x="9.398" y="12.192"/>
+<vertex x="9.398" y="14.224"/>
+<vertex x="5.715" y="14.224"/>
+<vertex x="5.715" y="8.636"/>
+<vertex x="7.874" y="8.636"/>
 </polygon>
 </signal>
 <signal name="FB">
 <contactref element="R2" pad="2"/>
 <contactref element="U1" pad="5"/>
 <contactref element="R1B" pad="1"/>
-<wire x1="8.89" y1="11.495" x2="7.3" y2="11.495" width="0.3048" layer="1"/>
-<wire x1="7.3" y1="11.495" x2="7.3" y2="11.4" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="11.495" x2="8.89" y2="13.016" width="0.3048" layer="1"/>
+<wire x1="11.11" y1="10.13" x2="12.7" y2="10.13" width="0.254" layer="1"/>
+<wire x1="12.7" y1="10.13" x2="12.7" y2="10.095" width="0.254" layer="1"/>
+<wire x1="11.11" y1="10.13" x2="11.365" y2="10.13" width="0.254" layer="1"/>
+<wire x1="12.7" y1="10.095" x2="12.765" y2="10.095" width="0.254" layer="1"/>
+<wire x1="12.765" y1="10.095" x2="12.765" y2="8.255" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1A" pad="1"/>
 <contactref element="R1B" pad="2"/>
-<via x="4.445" y="10.16" extent="1-16" drill="0.3"/>
-<wire x1="4.445" y1="10.16" x2="6.985" y2="10.16" width="0.3048" layer="16"/>
-<via x="6.985" y="10.16" extent="1-16" drill="0.3"/>
-<wire x1="6.985" y1="10.16" x2="8.89" y2="10.16" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="10.16" x2="8.89" y2="10.095" width="0.3048" layer="1"/>
-<wire x1="4.445" y1="10.16" x2="3.875" y2="10.16" width="0.3048" layer="1"/>
+<wire x1="11.365" y1="8.255" x2="11.365" y2="6.35" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
